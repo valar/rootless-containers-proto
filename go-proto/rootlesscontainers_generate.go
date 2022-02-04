@@ -31,6 +31,6 @@ var NoopID uint32 = 0xFFFFFFFF
 // IsDefault returns whether the given Resource is the default. If a Resource
 // is equal to the default Resource then it is not necesary to include it on
 // the filesystem.
-func IsDefault(r *Resource) bool {
+func IsDefault(r Resource) bool {
 	return r.Uid == NoopID && r.Gid == NoopID
 }
