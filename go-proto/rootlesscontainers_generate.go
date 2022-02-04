@@ -18,7 +18,6 @@
 package rootlesscontainers
 
 // Generate everything for our protobuf.
-//go:generate protoc --go_out=. --go_opt=Mrootlesscontainers.proto=.;rootlesscontainers rootlesscontainers.proto
 
 // Keyname is the official xattr key used to store rootlesscontainers.proto
 // blobs, and is the only key we will treat in this special way.
